@@ -34,7 +34,6 @@ const updateStatus = async (req, res) => {
   }
 };
 
-// ● Endpoint to retrieve tasks based on their status.
 const tasksByStatus = async (req, res) => {
   try {
     const { status } = req.params;
