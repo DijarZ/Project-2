@@ -1,0 +1,49 @@
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+ model Users{
+  id Int @id@default(autoincrement())
+  name String
+  email String @unique
+  role String
+ createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  Tasks Tasks[]
+ }
+
+
+
+model Tasks {
+  id              Int      @id @default(autoincrement())
+  userId         Int?
+  description    String
+  name          String
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+  user          Users?     @relation(fields: [userId],references: [id])
+taskstatus taskstatus[]  
+}
+
+
+ enum TaskStatus {
+  to_do
+  in_progress
+  blocked
+  in_review
+  done
+}
+
+model taskstatus{
+status_id       Int     @id @default(autoincrement())
+task_id   Int
+status_name    TaskStatus @default(to_do)
+user Tasks @relation(fields: [task_id], references: [id])
+
+}
