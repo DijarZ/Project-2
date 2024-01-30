@@ -25,13 +25,13 @@ Setup
  1. Clone the Repository:
 
 
-git clone https://github.com/DijarZ/Project-2.git
+git clone https://github.com/DijarZ/Project-2.git  
 cd Project-2  
 
 2.Install Dependencies:  
 
 npm install
-Set Up Environment Variables:
+
 
 
 3.Set Up Environment Variables:    
