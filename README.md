@@ -40,7 +40,7 @@ DATABASE_PASSWORD="***"
 DATABASE_NAME="***"  
 DATABASE_URL="***"    
 
-  these "***" you can replace with your data.
+  these " " you can replace with your data.
 
 
 4.Database Migration:  
