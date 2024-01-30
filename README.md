@@ -6,20 +6,20 @@ Introduction
 
 Built With:
 
-Node.js
-Express.js
-Prisma
+Node.js  
+Express.js  
+Prisma  
 
 Requirements  
-  To run this project correctly, you have the following installed package:
-@prisma/client,
-body-parser,
-cors,
-dotenv,
-express,
-mysql,
-nodemon,
-prisma,
+  To run this project correctly, you have the following installed package:  
+  @prisma/client,  
+  body-parser,    
+  cors,  
+  dotenv,  
+  express,  
+  mysql,  
+  nodemon,  
+  prisma,  
 
 Setup  
  1. Clone the Repository:
@@ -40,7 +40,7 @@ DATABASE_PASSWORD="***"
 DATABASE_NAME="***"  
 DATABASE_URL="***"    
 
-  these *** you can replace with your data.
+  these "***" you can replace with your data.
 
 
 4.Database Migration:  
